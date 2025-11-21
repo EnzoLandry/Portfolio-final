@@ -1,0 +1,108 @@
+/* Styles pour la page de présentation */
+.conteneur-present {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.entete-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-profil {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-profil:hover {
+    border-color: #27ae60;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(39, 174, 96, 0.15);
+}
+
+.titre-section {
+    color: #27ae60;
+    font-size: 24px;
+    margin-bottom: 20px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.titre-section:hover {
+    text-shadow: 0 0 10px rgba(39, 174, 96, 0.3);
+}
+
+.texte-surligne {
+    color: #27ae60;
+    font-weight: 500;
+}
+
+.liste-competences {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.etiquette-competence {
+    background: #333333;
+    color: #27ae60;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.etiquette-competence:hover {
+    background: #27ae60;
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
+}
+
+.lien-contact {
+    color: #27ae60;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.lien-contact:hover {
+    color: #1e8449;
+    text-decoration: none;
+    border-bottom: 2px solid #27ae60;
+}
+.lien-contact:active{
+    background-color: rgb(81, 19, 105);
+}
+
+input:focus{
+    border: 2px solid #27ae60;
+    background-color: #f4f4f400;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 8px rgba(39, 174, 96, 0.2);
+}
+button{
+    background: linear-gradient(160deg, #9fd890, #27ae60);
+    transition: all 0.4s ease;
+    color: white;
+    border: 2px solid #27ae60;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+button:hover{
+    background: linear-gradient(160deg, #27ae60, #1e8449);
+    border: 2px solid #1e8449;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
+}

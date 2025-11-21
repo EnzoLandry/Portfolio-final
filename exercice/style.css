@@ -1,0 +1,16 @@
+.bloc_300_150{
+    display: flex;
+    width: 300px;
+    height: 150px;
+    background: linear-gradient(to right,#d68b19,#d33c0d);
+    align-items: center;
+    justify-content: center;
+    border: solid black;
+    border-radius: 3%;
+   
+}
+.texte{
+   
+    color: white;
+    
+}
