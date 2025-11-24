@@ -1,87 +1,49 @@
-/* Styles pour la section d'introduction */
+/* Lien projet stylé selon le thème */
+.lien-projet {
+    display: inline-block;
+    width: 220px;
+    padding: 10px 16px;
+    background: linear-gradient(160deg, #27ae60, #219a52);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(39, 174, 96, 0.15);
+    transition: all 0.3s ease;
+    border: 2px solid #27ae60;
+}
+.lien-projet:hover {
+    background: linear-gradient(160deg, #219a52, #27ae60);
+    color: #fff;
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
+    border-color: #219a52;
+}
+/* Styles spécifiques à la page projet */
 .texte-intro {
     text-align: center;
     color: #555;
     margin: 24px 0;
     font-size: 18px;
 }
-
-/* Styles pour les sections de projet */
 .section-projet {
     margin: 32px 0;
     padding: 0 16px;
 }
-
-.carte-projet {
-    background: #fff;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-    border: 2px solid transparent;
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    transition: all 0.3s ease;
-}
-
-.carte-projet:hover,
-.carte-projet:focus-within {
-    border-color: #27ae60;
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(39, 174, 96, 0.15);
-}
-
-/* Styles pour les titres */
-.carte-projet h3 {
-    color: #27ae60;
-    font-size: 24px;
-    margin-bottom: 20px;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
-}
-
-
-.carte-projet h3:hover {
-    text-shadow: 0 0 10px rgba(39, 174, 96, 0.3);
-}
-
-/* Styles pour les listes */
 .carte-projet ul {
     margin: 16px 0 16px 19px;
     padding: 0;
     list-style-type: disc;
 }
-
 .carte-projet li {
     margin-bottom: 13px;
     color: #555;
 }
-
-/* Styles pour les liens des projets */
 .conteneur-lien-projet {
     text-align: center;
     margin: 24px 0 8px 0;
 }
-
-.lien-projet {
-    display: inline-block;
-    width: 400px;
-    padding: 10px 16px;
-    background: #27ae60;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    text-align: center;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
-
-.lien-projet:hover {
-    background: #219a52;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
-}
-
-/* Section d'apprentissage */
 .apprentissage {
     background: #fafafa;
     padding: 19px;
@@ -90,4 +52,6 @@
     border-left: 4px solid #27ae60;
 }
 
+
+/* Styles pour les titres */
 

@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding-top: 50px;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #e0dfdf;
 }
 
 p {
@@ -31,7 +31,9 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 1000; /* 
+    Assure que la barre de navigation reste au-dessus des autres éléments
+   */
     background-color: #333333;
 }
 
@@ -47,8 +49,10 @@ nav ul {
 nav ul > li {
     float: left;
 }
-
-.elt-liste {
+/* 
+    Pour le a href dans la nav
+   */
+.elt-liste { 
     display: block;
     color: white;
     padding: 14px 16px;
@@ -144,17 +148,17 @@ nav ul > li {
     gap: 10px;
 }
 
-/* ========================================
+/* 
    GALERIE ET FIGURES
-   ======================================== */
+   */
 
 figure {
-    width: 350px;
-    border-radius: 5%;
-    flex-direction: column;
-    transform: translateX(3px);
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
+        border-radius: 5%;
+        border: 2px solid transparent;
+        width: 350px;
+        flex-direction: column;
+        transition: all 0.3s ease;
+        transform: translateX(3px);
 }
 
 figure:hover {

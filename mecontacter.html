@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Me contacter - Portfolio Enzo Landry</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+    <link href="css/presentation.css" rel="stylesheet">
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="index.html" class="elt-liste">Présentation</a></li>
+			<li><a href="parcours.html" class="elt-liste">Parcours</a></li>
+			<li><a href="projet.html" class="elt-liste">Projet</a></li>
+			<li><a href="galerie.html" class="elt-liste">Galerie</a></li>
+			<li><a href="mecontacter.html" class="elt-liste">Me contacter</a></li>
+		</ul>
+	</nav>
+	<main class="conteneur-present">
+		<header class="entete-intro">
+			<h1>Me contacter</h1>
+			<p class="intro-text">Vous souhaitez me contacter ? Remplissez le formulaire ci-dessous.</p>
+		</header>
+		<section class="section-profil">
+			<h2 class="titre-section">Me contacter via le site</h2>
+			<form action="#" method="post" class="form-contact">
+				<fieldset>
+					<legend>Informations personnelles</legend>
+					<div>
+						<label for="nom">Nom et prénom :</label>
+						<input type="text" id="nom" name="nom" minlength="2" placeholder="Ex : Enzo Landry" autocomplete="name" required>
+					</div>
+					<div>
+						<label for="email">Email :</label>
+						<input type="email" id="email" name="email" placeholder="Ex : enzo.landry@mail.com" autocomplete="email" required>
+					</div>
+					<div>
+						<label for="message">Votre message :</label>
+						<textarea name="message" id="message" rows="6" cols="50" placeholder="Votre message..." required></textarea>
+					</div>
+				</fieldset>
+				<div>
+					<button type="submit">Envoyer</button>
+					<button type="reset">Effacer</button>
+				</div>
+			</form>
+		</section>
+		<footer>
+			<p>
+				<a href="https://github.com/EnzoLandry" target="_blank">&copy; Enzo Landry</a>
+			</p>
+		</footer>
+	</main>
+</body>
+</html>

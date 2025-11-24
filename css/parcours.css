@@ -15,7 +15,9 @@ table th,table td {
 
 table td:hover ,table th:hover{
     background: linear-gradient(160deg,#f4f4f4,#27ae60);
-    cursor: pointer;
+    cursor: pointer; /* 
+   Teste si le curseur change en pointeur pour indiquer un élément cliquable
+  */
     transform: scale(1.01);
 }
 

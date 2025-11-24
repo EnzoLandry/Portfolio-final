@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Enzo Landry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/presentation.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="elt-liste">Présentation</a></li>
+            <li><a href="parcours.html" class="elt-liste">Parcours</a></li>
+            <li><a href="projet.html" class="elt-liste">Projet</a></li>
+            <li><a href="galerie.html" class="elt-liste">Galerie</a></li>
+            <li><a href="mecontacter.html" class="elt-liste">Me contacter</a></li>
+        </ul>
+    </nav>
+
+    <main class="conteneur-present">
+        <header class="entete-intro">
+            <h1>
+                CV
+            </h1>
+            <img src="icon-7797704_1280.webp" alt="Photo de profil" class="image">
+                <!-- https://pixabay.com/fr/illustrations/ic%C3%B4ne-profil-utilisateur-clipart-7797704/ -->
+        </header>
+        <section class="section-profil">
+            <p>
+                Je m'appelle Enzo Landry.
+            </p>
+            <p>
+                Actuellement étudiant à 
+                <a href="https://www.univ-littoral.fr/" target="_blank">
+                    l'ULCO, à Calais
+                </a>
+            </p>
+            <p>
+                Étudiant en L1 informatique
+            </p>
+            <div style="align-items: center;">
+                <img src="img/logopython.webp" alt="Logo Python" class="image">
+                <img src="img/HTML5_logo_and_wordmark.svg.png" alt="Logo HTML5" class="image">
+            </div>
+            </section>
+        <section class="section-profil">
+            <h2 class="titre-section">Me contacter je le changerais d'endroit plus tard</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Info perso</legend>
+                    <div>
+                        <label for="nom">Nom et prénom :</label>
+                        <input type="text" id="nom" name="nom" minlength="2" placeholder="Ex : Enzo Landry" value="" autocomplete="name" required>
+                    </div>
+                
+                    <div>
+                        Choisissez votre genre :
+                        <label>
+                            <input type="radio" name="genre" checked value="H">
+                            Homme
+                        </label>
+                        <label>
+                            <input type="radio" name="genre" value="F">
+                            Femme
+                        </label>
+                    </div>
+                    <div>
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" minlength="2" placeholder="Ex : EnzoLandry@mail.com" value="" autocomplete="email" required>
+                    </div>
+                    <div>
+                        <label for="birthday">Date : </label>
+                        <input type="datetime-local" id="date" name="date" min="2025-11-21" max="2026-01-13"required>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Autres infos</legend>
+                    <div>
+                        <label for="pass">MDP :</label>
+                        <input type="password" id="pass" name="pass" minlength="2" placeholder="Mot de passe" value="" autocomplete="new-password" required>
+                    </div>
+                    
+                    <div>
+                        <label for="pays">Choisir un pays :</label>
+                        <select name="pays" id="pays"  required> <!--multiple pour plusieurs choix et multiple size="15"pour en afficher 15-->
+                            <optgroup label="Europe">
+                                <option value="France" >France</option>
+                                <option value="be" disabled>Belgique plus autorisé</option>
+                                
+                            </optgroup>
+                            <optgroup label="Afrique">
+                                <option value="civ">Côte d'Ivoire</option>
+                            </optgroup>
+                            <option value="" selected>--Choisir un pays--</option>
+        
+                        </select>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="conditions" required>
+                        <label for="check">Accepter les conditions</label>
+                    </div>
+                </fieldset>
+                <div>
+                    <label for="message"></label>
+                    <textarea name="message" id="message" rows="10" cols="120"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Valider</button>
+                    <button type="reset">Effacer</button>
+                </div>
+            </form>
+            
+        
+        </section>
+    </main>
+     <footer>
+            <p>
+                <a href="https://github.com/EnzoLandry" target="_blank">
+                    &copy; Enzo Landry
+                </a>
+            </p>
+        </footer>
+    
+        
+
+</body>
+</html>
