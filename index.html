@@ -85,6 +85,76 @@
                 </li>
             </ul>
         </section>
+        <section class="section-profil">
+            <h2 class="titre-section">Me contacter je le changerais d'endroit plus tard</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Info perso</legend>
+                    <div>
+                        <label for="nom">Nom et prénom :</label>
+                        <input type="text" id="nom" name="nom" minlength="2" placeholder="Ex : Enzo Landry" value="" autocomplete="name" required>
+                    </div>
+                
+                    <div>
+                        Choisissez votre genre :
+                        <label>
+                            <input type="radio" name="genre" checked value="H">
+                            Homme
+                        </label>
+                        <label>
+                            <input type="radio" name="genre" value="F">
+                            Femme
+                        </label>
+                    </div>
+                    <div>
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" minlength="2" placeholder="Ex : EnzoLandry@mail.com" value="" autocomplete="email" required>
+                    </div>
+                    <div>
+                        <label for="birthday">Date : </label>
+                        <input type="datetime-local" id="date" name="date" min="2025-11-21" max="2026-01-13"required>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Autres infos</legend>
+                    <div>
+                        <label for="pass">MDP :</label>
+                        <input type="password" id="pass" name="pass" minlength="2" placeholder="Mot de passe" value="" autocomplete="new-password" required>
+                    </div>
+                    
+                    <div>
+                        <label for="pays">Choisir un pays :</label>
+                        <select name="pays" id="pays"  required> <!--multiple pour plusieurs choix et multiple size="15"pour en afficher 15-->
+                            <optgroup label="Europe">
+                                <option value="France" >France</option>
+                                <option value="be" disabled>Belgique plus autorisé</option>
+                                
+                            </optgroup>
+                            <optgroup label="Afrique">
+                                <option value="civ">Côte d'Ivoire</option>
+                            </optgroup>
+                            <option value="" selected>--Choisir un pays--</option>
+        
+                        </select>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="conditions" required>
+                        <label for="check">Accepter les conditions</label>
+                    </div>
+                </fieldset>
+                <div>
+                    <label for="message"></label>
+                    <textarea name="message" id="message" rows="10" cols="120"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Valider</button>
+                    <button type="reset">Effacer</button>
+                </div>
+            </form>
+            
+        
+        </section>
 
         <footer>
             <p>
