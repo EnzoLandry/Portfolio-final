@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo box
+    </title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+   <section class="section-profil">
+            
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Info perso</legend>
+                    <div>
+                        <label for="nom">Nom:</label>
+                        <input type="text" id="nom" name="nom" minlength="10" placeholder="Ex : Landry" value="" autocomplete="name" required>
+                    </div>
+                    <div>
+                        <label for="nom">Prénom :</label>
+                        <input type="text" id="nom" name="nom" maxlength="10" placeholder="Ex : Enzo " value="" autocomplete="name" required>
+                    </div>
+                    <div>
+                        <label for="birthday">Date de naissance : </label>
+                        <input type="date" id="date" name="date" max="2007-11-21"required>
+                    </div>
+                
+                    <div>
+                        Choisissez votre genre :
+                        <label>
+                            <input type="radio" name="genre" checked value="H">
+                            Homme
+                        </label>
+                        <label>
+                            <input type="radio" name="genre" value="F">
+                            Femme
+                        </label>
+                    </div>
+                    <div>
+                        <label for="pays">Choisir un pays :</label>
+                        <select name="pays" id="pays"  required> <!--multiple pour plusieurs choix et multiple size="15"pour en afficher 15-->
+                            <optgroup label="Europe">
+                                <option value="France" >France</option>
+                                <option value="be" disabled>Belgique plus autorisé</option>
+                                
+                            </optgroup>
+                            <optgroup label="Afrique">
+                                <option value="civ">Côte d'Ivoire</option>
+                            </optgroup>
+                            <option value="" selected>--Choisir un pays--</option>
+        
+                        </select>
+                    </div>
+                    
+                    <div>
+                        Choisissez votre passe temps :
+                        <label>
+                            <input type="radio" name="genre"  value="J">
+                            jeux vidéo
+                        </label>
+                        <label>
+                            <input type="radio" name="genre" value="Football">
+                            Football
+                        </label>
+                    <div>
+                        <button type="submit">Valider</button>
+                        <button type="reset">Effacer</button>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Infos utilisateurs</legend>
+                    <div>
+                        <label for="Pseudo">Pseudo :</label>
+                        <input type="text" id="Pseudo" name="Pseudo" minlength="10" placeholder="Ex : The strongest one" value="" autocomplete="nickname" required>
+                    </div>
+                    <div>
+
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" minlength="2" placeholder="Ex : EnzoLandry@mail.com" value="" autocomplete="email" required>
+                    </div>
+                    <div>
+                        <label for="pass">MDP :</label>
+                        <input type="password" id="pass" name="pass" minlength="2" placeholder="Mot de passe" value="" autocomplete="new-password" required>
+                    </div>
+                    <div>
+                        <button type="submit">Valider</button>
+                        <button type="reset">Effacer</button>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Observations générales</legend>
+                    <div>
+                        <label for="message"></label>
+                        <textarea name="message" id="message" rows="10" cols="120"></textarea>
+                    </div>
+                </fieldset>
+               
+            </form>
+
+</body>
