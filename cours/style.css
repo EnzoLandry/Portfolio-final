@@ -1,0 +1,66 @@
+.grille{
+    display: grid;
+    height: 500px;
+    /* grid-template-columns: repeat(3, 100px);*/
+    /*grid-template-columns: 100px 80px 50px;*/  /* 
+   BLoc
+   */
+   /* grid-template-columns: 1fr 2fr 1fr; */
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: repeat(4,100px);
+    gap: 10px;
+    justify-content: center;  
+    align-content: center; 
+    grid-template-areas: 
+    "m1 he1 he1 m2"
+    "m1 c1 c3 m2"
+    "m1 c2 c3 m2"
+    "m1 f1 f1 m2"
+    ; 
+}
+
+.he1 {
+    grid-area: he1;
+}
+.m1 {
+    grid-area :m1;
+}
+.m2 {
+    grid-area :m2;
+}
+.c1 {
+    grid-area :c1;
+}
+.c2 {
+    grid-area :c2;
+}
+.c3 {
+    grid-area :c3;
+}
+.f1 {
+    grid-area :f1;
+}
+
+.grille div {
+    display: grid;
+    background-color: rgb(221, 164, 57);
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    
+    text-align: center;
+    
+    }
+
+.bloc1{
+    grid-column: 3 ;
+    grid-row: 3;
+}
+.bloc2{
+    grid-column: 1 / span 2 ;  /* Pour utiliser 2 places*/
+    grid-row: 2;
+}
+.bloc3{
+    grid-column: 3 ;
+    grid-row: 1 / span 2 ;
+}
