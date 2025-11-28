@@ -9,6 +9,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
     <link href="css/presentation.css" rel="stylesheet">
+	<link href="css/mecontacter.css" rel="stylesheet">
 </head>
 <body>
 	<nav>
@@ -27,25 +28,25 @@
 		</header>
 		<section class="section-profil">
 			<h2 class="titre-section">Me contacter via le site</h2>
-			<form action="#" method="post" class="form-contact">
+			<form action="#" method="post" class="formulaire-contact">
 				<fieldset>
 					<legend>Informations personnelles</legend>
 					<div>
 						<label for="nom">Nom et prénom :</label>
-						<input type="text" id="nom" name="nom" minlength="2" placeholder="Ex : Enzo Landry" autocomplete="name" required>
+						<input type="text" id="nom" name="nom" minlength="2" placeholder="Ex : Enzo Landry" autocomplete="name" required class="champ-texte">
 					</div>
 					<div>
 						<label for="email">Email :</label>
-						<input type="email" id="email" name="email" placeholder="Ex : enzo.landry@mail.com" autocomplete="email" required>
+						<input type="email" id="email" name="email" placeholder="Ex : enzo.landry@mail.com" autocomplete="email" required class="champ-texte">
 					</div>
 					<div>
 						<label for="message">Votre message :</label>
-						<textarea name="message" id="message" rows="6" cols="50" placeholder="Votre message..." required></textarea>
+						<textarea name="message" id="message" rows="6" cols="50" placeholder="Votre message..." required class="champ-texte"></textarea>
 					</div>
 				</fieldset>
 				<div>
-					<button type="submit">Envoyer</button>
-					<button type="reset">Effacer</button>
+					<button type="submit" class="bouton-envoyer">Envoyer</button>
+					<button type="reset" class="bouton-effacer">Effacer</button>
 				</div>
 			</form>
 		</section>

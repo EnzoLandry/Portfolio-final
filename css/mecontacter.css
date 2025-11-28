@@ -1,0 +1,60 @@
+/* Style du formulaire de contact */
+.formulaire-contact {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.formulaire-contact fieldset {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.formulaire-contact legend {
+  font-size: 19px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+.formulaire-contact label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.formulaire-contact .champ-texte {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #bfc9d1;
+  border-radius: 6px;
+  margin-bottom: 19px;
+  font-size: 16px;
+  background: #f8f9fa;
+  transition: border-color 0.2s;
+}
+
+.formulaire-contact .bouton-envoyer,
+.formulaire-contact .bouton-effacer {
+  background: linear-gradient(160deg, #9fd890, #27ae60);
+  color: white;
+  border: 2px solid #27ae60;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  margin-right: 11px;
+}
+
+.formulaire-contact .bouton-envoyer:hover,
+.formulaire-contact .bouton-effacer:hover {
+  background: linear-gradient(160deg, #27ae60, #1e8449);
+  border: 2px solid #1e8449;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
+}
