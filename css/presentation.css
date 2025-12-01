@@ -1,4 +1,3 @@
-/* Styles pour la page de présentation */
 .conteneur-present {
     width: 90%;
     max-width: 1200px;
@@ -6,36 +5,37 @@
     padding: 40px;
 }
 
+/* En-tête de la partie présentation */
 .entete-intro {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
 
 .section-profil {
     background: #fff;
-    padding: 40px;
-    border-radius: 12px;
+    padding: 35px;
+    border-radius: 10px;
     border: 2px solid transparent;
-    margin-bottom: 30px;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+    transition: 0.3s;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
 }
 
 .section-profil:hover {
     border-color: #27ae60;
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(39, 174, 96, 0.15);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(39,174,96,0.18);
 }
 
 .titre-section {
     color: #27ae60;
-    font-size: 24px;
-    margin-bottom: 20px;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
+    font-size: 22px;
+    margin-bottom: 18px;
+    transition: 0.25s;
 }
 
 .titre-section:hover {
-    text-shadow: 0 0 10px rgba(39, 174, 96, 0.3);
+    text-shadow: 0 0 8px rgba(39, 174, 96, 0.25);
 }
 
 .texte-surligne {
@@ -43,66 +43,155 @@
     font-weight: 500;
 }
 
+/* Liste des compétences sous forme de tags je pense */
 .liste-competences {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
-    margin: 20px 0;
+    gap: 12px;
+    margin: 15px 0;
 }
 
 .etiquette-competence {
-    background: #333333;
+    background: #333;
     color: #27ae60;
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-size: 16px;
-    transition: all 0.3s ease;
+    padding: 7px 14px;
+    border-radius: 18px;
+    font-size: 15px;
     cursor: pointer;
+    transition: 0.25s ease;
 }
 
 .etiquette-competence:hover {
     background: #27ae60;
     color: #fff;
-    transform: scale(1.1);
-    box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
+    transform: scale(1.08);
+    box-shadow: 0 3px 10px rgba(39,174,96,0.3);
 }
 
+/* Liens contact */
 .lien-contact {
     color: #27ae60;
     text-decoration: none;
-    transition: all 0.3s ease;
     border-bottom: 2px solid transparent;
+    transition: 0.25s;
 }
 
 .lien-contact:hover {
     color: #1e8449;
-    text-decoration: none;
-    border-bottom: 2px solid #27ae60;
-}
-.lien-contact:active{
-    background-color: rgb(81, 19, 105);
+    border-bottom-color: #27ae60;
 }
 
-input:focus{
-    border: 2px solid #27ae60;
-    background-color: #f4f4f400;
-    outline: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 0 8px rgba(39, 174, 96, 0.2);
+.lien-contact:active {
+    background: rgb(81,19,105);
 }
-button{
+
+
+
+/* Boutons */
+button {
     background: linear-gradient(160deg, #9fd890, #27ae60);
-    transition: all 0.4s ease;
-    color: white;
     border: 2px solid #27ae60;
+    color: white;
     padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: 500;
+    border-radius: 6px;
     cursor: pointer;
+    transition: 0.35s;
+    font-weight: 500;
 }
-button:hover{
+
+button:hover {
     background: linear-gradient(160deg, #27ae60, #1e8449);
-    border: 2px solid #1e8449;
+    border-color: #1e8449;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
+    box-shadow: 0 4px 10px rgba(39,174,96,0.28);
+}
+/*  a href */
+a {
+        color: #27ae60;
+    }
+
+@media screen and (max-width: 600px) {
+
+    .titre-section,
+    .texte-surligne,
+    .section-title {
+        color: #2980b9;
+    }
+
+    .section-profil:hover {
+        border-color: #2980b9;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 16px rgba(41, 128, 185, 0.18);
+    }
+
+    .titre-section:hover {
+        text-shadow: 0 0 8px rgba(41,128,185,0.25);
+    }
+
+    .lien-contact:hover {
+        color: #1f6fb0;
+        border-bottom-color: #2980b9;
+    }
+
+    input:focus {
+        border: 2px solid #2980b9;
+        box-shadow: 0 0 6px rgba(41, 128, 185, 0.25);
+    }
+
+
+    button {
+        background: linear-gradient(160deg, #8fb8ff, #2980b9);
+        border-color: #2980b9;
+    }
+
+    button:hover {
+        background: linear-gradient(160deg, #2980b9, #1a5a8a);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 10px rgba(41, 128, 185, 0.28);
+    }
+
+    .etiquette-competence:hover,
+    .skill:hover {
+        background: #2980b9;
+        color: #fff;
+        box-shadow: 0 3px 10px rgba(41, 128, 185, 0.3);
+    }
+
+    /* Galerie responsive */
+    .presentationprojet .flex-row {
+        display: block;
+    }
+
+    .presentationprojet .flex-row figure {
+        width: 100%;
+        margin-bottom: 14px;
+    }
+
+    .presentationprojet .flex-row video,
+    .presentationprojet .flex-row audio {
+        width: 100%;
+        height: auto;
+    }
+
+    a {
+        color: #2980b9;
+    }
+
+    .etiquette-competence {
+        background: #2980b9;
+        color: #fff;
+    }
+
+    .etiquette-competence:hover {
+        background: #1f6fb0;
+        transform: translateY(-2px);
+    }
+
+    .lien-contact {
+        color: #2980b9;
+    }
+
+    .lien-contact:hover {
+        color: #1f6fb0;
+    }
 }

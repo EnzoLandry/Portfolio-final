@@ -1,4 +1,4 @@
-/* Lien projet stylé selon le thème */
+
 .lien-projet {
     display: inline-block;
     width: 220px;
@@ -20,7 +20,7 @@
     box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
     border-color: #219a52;
 }
-/* Styles spécifiques à la page projet */
+/* Styles spécifiques à la page projet je l'ai pas utilisé dans les autres pour optimiser le css*/
 .texte-intro {
     text-align: center;
     color: #555;
@@ -53,5 +53,18 @@
 }
 
 
-/* Styles pour les titres */
+@media screen and (max-width: 600px) {
+    .lien-projet {
+        background: linear-gradient(160deg, #8fb8ff, #2980b9);
+        border-color: #2980b9;
+    }
 
+    .lien-projet:hover {
+        background: linear-gradient(160deg, #2980b9, #1a5a8a);
+        border-color: #1a5a8a;
+    }
+
+    .apprentissage {
+        border-left-color: #2980b9;
+    }
+}

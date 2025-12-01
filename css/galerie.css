@@ -1,0 +1,28 @@
+/* 
+   GALERIE ET FIGURES
+   */
+
+.presentationprojet {
+    display: flex;
+    gap: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    /* Empiler les figures et rendre audio/video responsive sur mobile */
+    .presentationprojet .flex-row {
+        display: block;
+        gap: 0;
+    }
+
+    .presentationprojet .flex-row figure {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 16px;
+    }
+
+    .presentationprojet .flex-row video,
+    .presentationprojet .flex-row audio {
+        width: 100%;
+        height: auto;
+    }
+}

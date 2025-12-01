@@ -1,4 +1,4 @@
-/* Style du formulaire de contact */
+/* Style du formulaire de contact uniquement dans me contacter */
 .formulaire-contact {
   max-width: 600px;
   margin: 0 auto;
@@ -57,4 +57,33 @@
   border: 2px solid #1e8449;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
+}
+
+
+@media screen and (max-width: 600px) {
+  .formulaire-contact .bouton-envoyer,
+  .formulaire-contact .bouton-effacer {
+    background: linear-gradient(160deg, #8fb8ff, #2980b9);
+    border: 2px solid #2980b9;
+    color: #fff;
+  }
+
+  .formulaire-contact .bouton-envoyer:hover,
+  .formulaire-contact .bouton-effacer:hover {
+    background: linear-gradient(160deg, #2980b9, #1a5a8a);
+    border: 2px solid #1a5a8a;
+    box-shadow: 0 4px 12px rgba(41, 128, 185, 0.3);
+    transform: translateY(-2px);
+  }
+
+  .formulaire-contact .champ-texte:focus {
+    border-color: #2980b9;
+    box-shadow: 0 0 8px rgba(41, 128, 185, 0.2);
+  }
+}
+
+/* Assurer liens et boutons bleus sur mobile si mecontacter.css chargé seul */
+@media screen and (max-width: 600px) {
+  a { color: #2980b9; }
+  button { background: linear-gradient(160deg, #8fb8ff, #2980b9); border: 2px solid #2980b9; color: #fff; }
 }

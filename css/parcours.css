@@ -21,4 +21,25 @@ table td:hover ,table th:hover{
     transform: scale(1.01);
 }
 
+/* Mobile: utiliser bleu au lieu de vert */
+@media screen and (max-width: 600px) {
+    table th, table td {
+        border: 1px solid #2980b9;
+    }
+
+    table td:hover, table th:hover {
+        background: linear-gradient(160deg,#f4f4f4,#2980b9);
+    }
+
+    /* Rendre la table défilable horizontalement sur mobile normalement ça le mettra en scroll voir MDN */
+    .parcours {
+        overflow-x: auto;
+    }
+
+    .parcours table {
+        width: 100%;
+        min-width: 600px;
+    }
+}
+
 
