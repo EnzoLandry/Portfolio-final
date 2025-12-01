@@ -80,10 +80,10 @@
     border-color: #2980b9;
     box-shadow: 0 0 8px rgba(41, 128, 185, 0.2);
   }
+  input:focus {
+        border: 2px solid #2980b9;
+        box-shadow: 0 0 8px rgba(41, 128, 185, 0.2);
+    }
 }
 
-/* Assurer liens et boutons bleus sur mobile si mecontacter.css chargé seul */
-@media screen and (max-width: 600px) {
-  a { color: #2980b9; }
-  button { background: linear-gradient(160deg, #8fb8ff, #2980b9); border: 2px solid #2980b9; color: #fff; }
-}
+

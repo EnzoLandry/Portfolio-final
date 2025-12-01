@@ -8,7 +8,7 @@
 }
 
 @media screen and (max-width: 600px) {
-    /* Empiler les figures et rendre audio/video responsive sur mobile */
+  
     .presentationprojet .flex-row {
         display: block;
         gap: 0;
