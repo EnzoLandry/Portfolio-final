@@ -9,16 +9,16 @@
     border-radius: 6px;
     text-align: center;
     font-weight: 500;
-    box-shadow: 0 2px 8px rgba(39, 174, 96, 0.15);
+    box-shadow: 0 2px 8px rgba(204, 204, 204, 0.15);
     transition: all 0.3s ease;
-    border: 2px solid #27ae60;
+    
 }
 .lien-projet:hover {
     background: linear-gradient(160deg, #219a52, #27ae60);
     color: #fff;
     transform: translateY(-2px) scale(1.04);
-    box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
-    border-color: #219a52;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    
 }
 /* Styles spécifiques à la page projet je l'ai pas utilisé dans les autres pour optimiser le css*/
 .texte-intro {
@@ -57,6 +57,7 @@
     .lien-projet {
         background: linear-gradient(160deg, #8fb8ff, #2980b9);
         border-color: #2980b9;
+        box-shadow: 0 2px 8px rgba(235, 235, 235, 0.15);
     }
 
     .lien-projet:hover {
