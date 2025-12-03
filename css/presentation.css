@@ -12,7 +12,7 @@
 }
 
 .section-profil {
-    background: #fff;
+    background: var(--couleur-fond);
     padding: 35px;
     border-radius: 10px;
     border: 2px solid transparent;
@@ -22,13 +22,13 @@
 }
 
 .section-profil:hover {
-    border-color: #27ae60;
+    border-color: var(--couleur-primaire);
     transform: translateY(-3px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
 }
 
 .titre-section {
-    color: #27ae60;
+    color: var(--titre-section);
     font-size: 22px;
     margin-bottom: 18px;
     transition: 0.25s;
@@ -39,7 +39,7 @@
 }
 
 .texte-surligne {
-    color: #27ae60;
+    color: var(--couleur-primaire);
     font-weight: 500;
 }
 
@@ -52,8 +52,8 @@
 }
 
 .etiquette-competence {
-    background: #333;
-    color: #27ae60;
+    background: var(--nav-bg);
+    color: var(--couleur-primaire);
     padding: 7px 14px;
     border-radius: 18px;
     font-size: 15px;
@@ -62,7 +62,7 @@
 }
 
 .etiquette-competence:hover {
-    background: #27ae60;
+    background: var(--couleur-primaire);
     color: #fff;
     transform: scale(1.08);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
@@ -70,15 +70,15 @@
 
 /* Liens contact */
 .lien-contact {
-    color: #27ae60;
+    color: var(--couleur-primaire);
     text-decoration: none;
     border-bottom: 2px solid transparent;
     transition: 0.25s;
 }
 
 .lien-contact:hover {
-    color: #1e8449;
-    border-bottom-color: #27ae60;
+    color: var(--couleur-secondaire);
+    border-bottom-color: var(--couleur-primaire);
 }
 
 .lien-contact:active {
@@ -89,8 +89,8 @@
 
 /* Boutons */
 button {
-    background: linear-gradient(160deg, #9fd890, #27ae60);
-    border: 2px solid #27ae60;
+    background: linear-gradient(160deg, #9fd890, var(--couleur-primaire));
+    border: 2px solid var(--couleur-primaire);
     color: white;
     padding: 10px 20px;
     border-radius: 6px;
@@ -100,8 +100,8 @@ button {
 }
 
 button:hover {
-    background: linear-gradient(160deg, #27ae60, #1e8449);
-    border-color: #1e8449;
+    background: linear-gradient(160deg, var(--couleur-primaire), var(--couleur-secondaire));
+    border-color: var(--couleur-secondaire);
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.28);
 }
@@ -110,16 +110,16 @@ a {
         color: #27ae60;
     }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
 
     .titre-section,
     .texte-surligne,
     .section-title {
-        color: #2980b9;
+        color: var(--bleu);
     }
 
     .section-profil:hover {
-        border-color: #2980b9;
+        border-color: var(--bleu);
         transform: translateY(-3px);
         box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
     }
@@ -129,26 +129,26 @@ a {
     }
 
     .lien-contact:hover {
-        color: #1f6fb0;
-        border-bottom-color: #2980b9;
+        color: var(--bleu-fonce);
+        border-bottom-color: var(--bleu);
     }
 
 
 
     button {
-        background: linear-gradient(160deg, #8fb8ff, #2980b9);
-        border-color: #2980b9;
+        background: linear-gradient(160deg, #8fb8ff, var(--bleu));
+        border-color: var(--bleu);
     }
 
     button:hover {
-        background: linear-gradient(160deg, #2980b9, #1a5a8a);
+        background: linear-gradient(160deg, var(--bleu), var(--bleu-fonce));
         transform: translateY(-2px);
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.28);
     }
 
     .etiquette-competence:hover,
     .skill:hover {
-        background: #2980b9;
+        background: var(--bleu);
         color: #fff;
         box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
     }
@@ -170,24 +170,24 @@ a {
     }
 
     a {
-        color: #2980b9;
+        color: var(--bleu);
     }
 
     .etiquette-competence {
-        background: #2980b9;
+        background: var(--bleu);
         color: #fff;
     }
 
     .etiquette-competence:hover {
-        background: #1f6fb0;
+        background: var(--bleu-fonce);
         transform: translateY(-2px);
     }
 
     .lien-contact {
-        color: #2980b9;
+        color: var(--bleu);
     }
 
     .lien-contact:hover {
-        color: #1f6fb0;
+        color: var(--bleu-fonce);
     }
 }

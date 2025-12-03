@@ -1,10 +1,11 @@
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--font-principale, Arial, sans-serif);
     margin: 0;
     padding-top: 50px;
     line-height: 1.6;
-    background-color: #e0dfdf;
+    background-color: var(--page-bg);
+    color: var(--text-color);
 }
 
 p {
@@ -13,9 +14,9 @@ p {
 
 h1, h2, h3 {
     text-align: center;
-    color: #333;
-    font-family: "Arial", serif;
-    font-weight: 1400;
+    color: var(--couleur-titre);
+    font-family: var(--font-titre);
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -31,7 +32,7 @@ nav {
     z-index: 1000; /* 
     Assure que la barre de navigation reste au-dessus des autres éléments voir mdn
    */
-    background-color: #333333;
+    background-color: var(--nav-bg);
 }
 
 nav ul {
@@ -60,7 +61,7 @@ nav ul > li {
 .elt-liste:hover {
     background-color: #444;
     color: rgb(188, 214, 188);
-    border-bottom: 3px solid #27ae60;
+    border-bottom: 3px solid var(--couleur-primaire);
 }
 
 /* 
@@ -71,7 +72,7 @@ nav ul > li {
     max-width: 1600px;
     margin: 30px auto;
     padding: 30px;
-    background: #ffffff;
+    background: var(--couleur-fond);
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s ease;
@@ -152,7 +153,7 @@ nav ul > li {
     */
 
 .skill {
-    background: #333;
+    background: var(--nav-bg);
     color: #fff;
     padding: 5px 10px;
     margin: 5px;
@@ -163,7 +164,7 @@ nav ul > li {
 }
 
 .skill:hover {
-    background: #27ae60;
+    background: var(--couleur-primaire);
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -189,7 +190,7 @@ nav ul > li {
    */
 
 .section-title {
-    color: #27ae60;
+    color: var(--titre-section);
     font-size: 24px;
     margin-bottom: 20px;
 }
@@ -206,18 +207,18 @@ a:hover {
     color: rgb(218, 218, 218);
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   
     .titre-section,
     .texte-surligne,
     .section-title {
-        color: #2980b9;
+        color: var(--bleu);
     }
 
    
     .section-profil:hover,
     figure:hover {
-        border-color: #2980b9;
+        border-color: var(--bleu);
         transform: translateY(-4px);
         box-shadow: 0 8px 20px rgba(41, 128, 185, 0.15);
     }
@@ -228,8 +229,8 @@ a:hover {
 
     
     .lien-contact:hover {
-        color: #1f6fb0;
-        border-bottom-color: #2980b9;
+        color: var(--bleu-fonce);
+        border-bottom-color: var(--bleu);
     }
 
 
@@ -238,16 +239,16 @@ a:hover {
     .formulaire-contact .bouton-envoyer,
     .formulaire-contact .bouton-effacer,
     .lien-projet {
-        background: linear-gradient(160deg, #8fb8ff, #2980b9);
-        border-color: #2980b9;
+        background: linear-gradient(160deg, #8fb8ff, var(--bleu));
+        border-color: var(--bleu);
         color: #fff;
     }
 
     button:hover,
     .formulaire-contact .bouton-envoyer:hover,
     .formulaire-contact .bouton-effacer:hover {
-        background: linear-gradient(160deg, #2980b9, #1a5a8a);
-        border-color: #1a5a8a;
+        background: linear-gradient(160deg, var(--bleu), var(--bleu-fonce));
+        border-color: var(--bleu-fonce);
         box-shadow: 0 4px 12px rgba(41, 128, 185, 0.3);
         transform: translateY(-2px);
     }
@@ -255,7 +256,7 @@ a:hover {
    
     .etiquette-competence:hover,
     .skill:hover {
-        background: #2980b9;
+        background: var(--bleu);
         color: #fff;
         box-shadow: 0 4px 12px rgba(41, 128, 185, 0.3);
         transform: translateY(-2px);
@@ -263,7 +264,7 @@ a:hover {
 
    
     nav {
-        background-color: #2980b9;
+        background-color: var(--nav-bg-mobile);
     }
 
     
@@ -273,8 +274,8 @@ a:hover {
     }
 
     .elt-liste:hover {
-        background-color: #1f6fb0;
+        background-color: var(--bleu-fonce);
         color: #ffffff;
-        border-bottom: 3px solid #0f4f7a;
+        border-bottom: 3px solid var(--bleu-fonce);
     }
 }
