@@ -1,0 +1,46 @@
+:root {
+    --couleur-primaire: #ff7b00;
+    --couleur-secondaire:#ffa726;
+    --couleur-texte:#494949;
+    --couleur-fond: #fffaf3;
+
+
+    --font-principale: 'Poppins', 'sans-serif';
+    --font-titre:'Montserrat','arial','sans-serif';
+
+    --padding-section:40px;
+    --marge-element:20px;
+
+}
+
+:root[data-theme="dark"] {
+    --couleur-primaire: #ffa726;
+    --couleur-secondaire:#ffffff;
+    --couleur-fond: #121212;
+    --couleur-texte:#f1f1f1;
+
+}
+
+:root[data-theme="mer"] {
+    --couleur-primaire: #1565c0;
+    --couleur-secondaire:#90caf9;
+    --couleur-fond: #e3f2fd;
+    --couleur-texte:#0d47a1;
+}
+
+:root[data-theme="vert"] {
+    --couleur-primaire: #15c031;
+    --couleur-secondaire:#90f995;
+    --couleur-fond: #d8e0d8;
+    --couleur-texte:#0da119;
+}
+
+:root[data-theme="jaune"] {
+    --couleur-primaire: #bdc015;
+    --couleur-secondaire:#f2f568;
+    --couleur-fond: #fdfcf536;
+    --couleur-texte:#bdc015;
+    
+
+
+}

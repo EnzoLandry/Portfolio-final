@@ -1,0 +1,24 @@
+:root {
+    --couleur-primaire: #27ae60;
+    --couleur-secondaire:#1e8449;
+    --couleur-titre:#494949;
+    --couleur-fond: #fffaf3;
+    --titre-section: #27ae60;
+
+
+    --font-principale: 'Poppins', 'sans-serif';
+    --font-titre:'Montserrat','arial','sans-serif';
+
+    --padding-section:40px;
+    --marge-element:20px;
+
+}
+
+:root[data-theme="bleu"] {
+    --couleur-primaire: #ffa726;
+    --couleur-secondaire:#ffffff;
+    --couleur-fond: #121212;
+    --couleur-texte:#f1f1f1;
+
+}
+
